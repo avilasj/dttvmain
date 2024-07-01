@@ -1,0 +1,380 @@
+body{
+
+  margin: 5px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f1ecec;
+  
+  
+  }
+/* Estilos para o cabeçalho */
+h1 {
+    background-color: red;
+    text-align: center;
+    margin: 1px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 0px;
+  }
+  
+  /* Estilos para a lista de navegação */
+  ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para os itens da lista de navegação */
+  li {
+    float: left;
+    display: inline; 
+  }
+  
+  /* Estilos para os links na lista de navegação */
+  li a {
+    display: block;
+    color: rgb(122, 174, 181);
+    text-align: justify;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Estilos para os links ativos na lista de navegação */
+  .active {
+    background-color: #ff0000;
+    border-radius: 5px;
+   
+      background-color: #04AA6D;
+  
+  }
+  
+  /* Estilos para os links quando passa o mouse por cima na lista de navegação */
+  li a:hover {
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para imagens dentro da lista de navegação */
+  .center{
+  
+    border-radius: 10px;
+    height: 180px;
+    width: 300px;
+  }
+  
+  /* Estilos para os links em todo o documento */
+  a {
+    display: block;
+    padding: 8px;
+  }
+  
+  /* Estilos para o conteúdo principal */
+  h2 {
+    text-align: center;
+    padding: 18px;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #ff0000;
+    border-radius: 5px;
+    text-align: right;
+    padding: 1px;
+    width: 100%;
+    margin: 1px;
+  
+  }
+  
+  /* Estilos para a lista dentro do rodapé */
+   ol {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  /* Estilos para os itens da lista dentro do rodapé */
+  ol  {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+  }
+  
+  /* Estilos para posicionar os itens da lista dentro do rodapé */
+  ol {
+    float: right;
+  }
+  
+  
+  .active {
+    background-color: #ff0000;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para os links quando passa o mouse por cima na lista de navegação */
+  ol a:hover {
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .barra{
+  float: right; 
+   padding: 1px;
+  }
+  
+  .input {
+    background-color: #212121;
+    max-width: 190px;
+    height: 40px;
+    padding: 2px;
+    float: right;
+  
+    /* text-align: center; */
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgbrgb(0, 255, 102); */
+  }
+  
+  .input:focus {
+    color: rgb(0, 255, 102);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 102);
+    box-shadow: -3px -3px 15px rgb(0, 255, 102);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  
+  .fotherline{
+  
+    width: fit-content;
+    height: fit-content;
+    text-align: right;
+  
+  }
+  
+  .card1 { 
+    margin-left: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: flex;
+    padding: 10px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(139, 138, 138, 0.055);
+    text-align: right;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .login{
+   text-align: right;
+  }
+  
+  .login img{
+  
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  
+  .imgs{
+  
+    vertical-align: middle;
+  
+  }
+  
+  .container {
+    width: 83%;
+    margin: 0px 120px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita que o conteúdo da caixa transborde */
+    background-color: white;
+  }
+  
+  .imagem {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .texto {
+    overflow: hidden;
+    text-align: justify;
+  }
+  .link {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #333; /* Cor do texto do link */
+    display: block; /* Faz o link ocupar todo o espaço disponível */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+
+  }
+  
+  /* video*/
+  
+  video{
+  
+    width: 60%;
+    border-radius: 15px;
+    margin-left: 0px;
+    padding: 2px;
+    box-sizing: border-box;
+    overflow: hidden; 
+   
+  
+  
+  
+  }
+   
+  /*zerar estilos da pagina*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+/*modifica o bloco geral de propaganda*/
+.center2{
+    display: flex;
+    width: 70%;
+    margin:0 auto;
+    padding:40px 2%;
+    flex-wrap: wrap;
+
+/*modifica a propaganda colocando 100% do epaço a ser utilizado*/
+}
+.noticias-wraper-1{
+    display: flex;
+    width: 100%;
+    
+}
+
+/*modifica a noticia maior*/
+.noticia-destaque{
+    width:60%;
+    padding-top: 20%;
+    background-color: #222;
+    border: 2px solid white;
+    position: relative;
+    
+    
+}
+
+/*modifica a noticia principal em relação ao 60% utilizado*/
+.noticia-destaque-single{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+/*modifica o titulo da noticia maior*/
+.noticia-destaque-single h3{
+    padding: 10px;
+    color: white;
+    
+}
+/*configura o padrão das noticias menores e o espaço que ambas em geral utilizarão*/
+.outras-noticias-1{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    
+}
+
+.outra-noticia-1-single{
+    width:50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    
+
+}
+
+.outra-noticia-1-single h3{
+    padding: 10px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.6);
+    
+    
+}
+
